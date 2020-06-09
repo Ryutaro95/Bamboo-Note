@@ -1,12 +1,12 @@
 module.exports = {
-  title: `RyutaroBlog`,
-  description: `Blog posted about ...`,
-  author: `[Takemura]`,
-  introduction: '変更できないじゃん',
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  title: `Bamboo Note`,
+  description: `Ryutaroの技術ブログ`,
+  author: `Ryutaro`,
+  introduction: `今までローカルにメモとして残してきたものを公開ようにアップロードしていく`,
+  siteUrl: `https://bamboo-note.tokyo/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: ``, // Your GitHub account
+    github: `Ryutaro95`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
@@ -26,5 +26,5 @@ module.exports = {
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: '', // Add your google analytics tranking ID
+  ga: 'UA-129047908-4', // Add your google analytics tranking ID
 }
