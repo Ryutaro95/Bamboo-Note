@@ -1,5 +1,5 @@
 ---
-title: '【Gatsbyチュートリアル】デプロイまでやってみた:part1'
+title: 'Gatsbyチュートリアルデプロイまでやってみた'
 date: 2020-6-10 3:57:13
 category: 'Gatsby'
 draft: false
