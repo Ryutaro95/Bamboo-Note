@@ -1,7 +1,7 @@
 ---
 title: '【Part2】Gatsbyチュートリアルでスタイルを設定する'
 date: 2020-06-11 00:06:96
-category: 'gatsby'
+category: 'Gatsby'
 draft: false
 ---
 
