@@ -397,4 +397,4 @@ $ surge public/
 以前AWSに`Ruby on Rails`で構築したアプリケーションを1週間近くかけてデプロイした苦労があるのでここまで簡単にデプロイできることに感動してしまいました。
 
 
-次回は「[【part2】gatsbyチュートリアルでスタイルを設定する](https://bamboo-note.tokyo/Gatsby/【part2】Gatsbyチュートリアルでスタイルを設定する)」に続きます。
+次回は「[【part2】gatsbyチュートリアルでスタイルを設定する](https://bamboo-note.tokyo/Gatsby/gatsby-tutorial2/)」に続きます。
