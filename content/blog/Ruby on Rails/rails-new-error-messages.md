@@ -5,8 +5,7 @@ category: 'Ruby on Rails'
 draft: false
 ---
 
-
-
+[Qiita](https://qiita.com/ryutaro9595)からの移転記事
 
 
 
