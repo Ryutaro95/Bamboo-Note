@@ -68,7 +68,7 @@ export function Head({ description, lang, meta, keywords, title }) {
 }
 
 Head.defaultProps = {
-  lang: `en`,
+  lang: `ja`,
   meta: [],
   keywords: [],
 }
