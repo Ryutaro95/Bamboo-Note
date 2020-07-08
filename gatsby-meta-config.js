@@ -2,7 +2,7 @@ module.exports = {
   title: `Bamboo Note`,
   description: `Ryutaroの技術ブログ`,
   author: `Ryutaro`,
-  introduction: `今までローカルにメモとして残してきたものを公開ようにアップロードしていく`,
+  introduction: `日々学習した技術系の記事を執筆していきます。\n学習内容: Ruby, Ruby on Rails, Go, TypeScript, Docker`,
   siteUrl: `https://bamboo-note.tokyo/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
