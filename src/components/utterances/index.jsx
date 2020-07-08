@@ -15,8 +15,8 @@ export const Utterences = ({ repo }) => {
     const isDarkTheme = Dom.hasClassOfBody(THEME.DARK)
     const utterances = document.createElement('script')
     const utterancesConfig = {
-      src,
-      repo,
+      src: 'https://utteranc.es/client.js',
+      repo: 'Ryutaro95/Bamboo-Note',
       branch,
       theme: isDarkTheme ? DARK_THEME : LIGHT_THEME,
       label: 'comment',
