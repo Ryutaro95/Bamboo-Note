@@ -5,7 +5,6 @@ category: 'Ruby'
 draft: false
 ---
 
-# RubyプログラミングでRSpecを使う
 Railsではなく純粋なRubyプログラムにRSpecを使ってみます。  
 
 <br>
