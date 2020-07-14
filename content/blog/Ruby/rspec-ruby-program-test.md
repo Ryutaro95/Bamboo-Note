@@ -5,7 +5,7 @@ category: 'Ruby'
 draft: false
 ---
 
-Railsではなく純粋なRubyプログラムにRSpecを使ってみます。  
+Railsではなく純粋なRubyプログラムでRSpecを使ったテストできるように導入までの手順を残しておきます。
 
 <br>
 
@@ -18,7 +18,7 @@ rspec: 3.9.0
 
 ## RSpecをインストール
 
-RSpecをインストールする。このとき依存関係のあるGemも同時にインストールされます。  
+RSpecをインストールする。このとき依存関係のあるGemも同時にインストールされる。  
 
 ```bash
 $ gem install rspec
@@ -30,7 +30,7 @@ Done installing documentation for rspec-support, rspec-core, diff-lcs, rspec-exp
 <br>
 
 インストールされたRSpec関連のGem  
-計6つのGemがインストールされました。  
+以下6つのGemがインストールされる。  
 
 ```bash
 rspec-support
@@ -43,7 +43,7 @@ rspec
 
 ## RSpec --init
 
-インストール後に初期化して初期ファイルを作成する。  
+インストール後に初期化して初期ファイルを作成。  
 
 ```bash
 $ rspec --init
@@ -56,8 +56,8 @@ $ rspec --init
 
 ### .rspec
 
-`rspec`コマンドのオプションを記述する設定ファイルです。  
-`.rspec`に記述されているオプションをコマンドの実行時に自動付与されます。  
+`rspec`コマンドのオプションを記述する設定ファイルになっている。  
+`.rspec`に記述されているオプションをコマンドの実行時に自動付与される。  
 
 .rspec
 ```
@@ -78,10 +78,10 @@ $ rspec --help
 <br>
 
 ## テスト実際に書いてみる
-RSpecが動作するかをテスト実際に書いて確認してみます  
+RSpecが正常に動作するかをテストを書いて確認してみます  
 
 
-specファイルを作成して簡単なテストを書いて行きます。  
+specファイルを作成  
 ```bash
 touch spec/sample_spec.rb
 ```
@@ -103,7 +103,7 @@ end
 
 <br>
 
-実際に`add`メソッドを作成していきます。
+`add`メソッドを作成する。
 
 ```bash
 $ touch sample.rb
@@ -134,4 +134,4 @@ Finished in 0.00272 seconds (files took 0.19695 seconds to load)
 ```
 
 テストがパスしました。  
-これで純粋なRubyプログラムでRSpecを使えるようになりました。
+これでRubyプログラムでRSpecを使ったテストを導入することができました。
