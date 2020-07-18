@@ -250,6 +250,8 @@ a.transpose #=> [[10, 30, 50], [20, 40, 60]]
 
 
 
+
+
 ```ruby
 # テストに回答した生徒の名前
 names = ['Alice', 'Bob', 'Carol']
