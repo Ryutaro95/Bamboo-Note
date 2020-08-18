@@ -1,7 +1,7 @@
 ---
 title: 'LeetCodeでRubyとアルゴリズムを学びたい#1【67. Add binary】'
 date: 2020-08-18 19:08:95
-category: 'leetcode', 'Ruby'
+category: 'leetcode'
 draft: false
 ---
 
