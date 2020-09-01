@@ -1,12 +1,9 @@
 ---
-title: 'Rails API - 複数テーブル（親子テーブル）を結合して必要なカラムだけをJSONで返却したい'
+title: '【Rails】モデルをgeneratorで作成するときに外部キー（FK）を設定する（references）'
 date: 2020-09-01 16:48:32
 category: 'Ruby on Rails'
 draft: false
 ---
-
-
-# 【Rails】モデルをgeneratorで作成するときに外部キー（FK）を設定する（references）
 
 
 ![](./images/users_posts_table.png)
