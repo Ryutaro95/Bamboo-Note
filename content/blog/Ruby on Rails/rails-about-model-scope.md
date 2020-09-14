@@ -14,6 +14,8 @@ Railsを学習していて次のようなコードを発見しました。「モ
 scope :name, ->(name) { where(name: name) }
 ```
 
+<br>
+<br>
 
 
 ひとまずRailsガイドで調べてみました。[Rails ガイド Active Record - 14.スコープ](https://railsguides.jp/active_record_querying.html#%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97)
@@ -22,7 +24,7 @@ scope :name, ->(name) { where(name: name) }
 
 > スコープを設定することで、関連オブジェクトやモデルへのメソッド呼び出しとして参照される、よく使用されるクエリを指定することができます。スコープでは`where`、`joins`、`includes`など、これまでに登場したすべてのメソッドを使用できます。どのスコープメソッドも、常に`ActiveRecord::Relation`オブジェクトを返します。このオブジェクトに対して、別のスコープを含む他のメソッド呼び出しを行うこともできます。
 
-
+<br>
 
 Railsガイドを読むとなんとなく分かると思いますが、次のようなArticleモデル内に「公開済み」となっている記事をwhereを用いて取得するクラスメソッドがあるとします。
 
@@ -35,7 +37,7 @@ class Article < ApplicationRecord
 end
 ```
 
-
+<br>
 
 上のようなクラスメソッドを`scope`メソッドを用いることで次のように書き換えることができます。書き換えているだけでクラスメソッドの定義と完全に同じなので`scope`を利用するか、クラスメソッドで定義するかは好みの問題のようです。
 
@@ -45,7 +47,7 @@ class Article < ApplicationRecord
 end
 ```
 
-
+<br>
 
 また、次のようにすることでスコープをスコープ内でチェインさせることも出来るみたいです。
 
@@ -78,13 +80,17 @@ category.articles.publiished
 ここまでは、Railsガイドをそのまま読んだだけなので、実際にRailsでプロジェクトを作成して`scope`を使ってみます。
 
 
-
+<br>
+<br>
+<br>
 
 
 ## 実際に`scope`を使ってみる
 
 まずは次のようなテーブルとデータを作成しました。
 
+<br>
+<br>
 
 
 #### Users
@@ -95,6 +101,9 @@ category.articles.publiished
 
 
 
+<br>
+<br>
+
 #### Posts
 
 | id  | title                    | body                               | published | user_id |
@@ -103,6 +112,11 @@ category.articles.publiished
 | 2   | 山田太郎の記事2          | これは山田太郎の2回目の記事です。  | true      | 1       |
 | 3   | 山田太郎の非公開記事 | これは山田太郎の非公開記事です。   | false     | 1       |
 
+
+
+<br>
+<br>
+<br>
 
 公開済みとなっているブログ記事のみを取得して一覧表示する想定なので、Postモデルで`scope`を設定します。
 
@@ -121,7 +135,8 @@ end
 ```
 
 
-
+<br>
+<br>
 
 
 それではコントローラ側で取得したブログ記事を返します。今回はRailsをAPIモードで作成しているため、json形式でブログ記事を返します。
@@ -139,8 +154,8 @@ end
 
 ```
 
-
-
+<br>
+<br>
 
 
 postmanなどで正常に公開済みの記事がレスポンスとして返ってきているか来ているか確認してみます。
@@ -178,7 +193,8 @@ postmanなどで正常に公開済みの記事がレスポンスとして返っ�
 
 
 
-
+<br>
+<br>
 
 ### 降順への並び替えを`scope`で同時にやってみる　
 
@@ -196,6 +212,7 @@ class Post < ApplicationRecord
 end
 ```
 
+<br>
 
 
 `order`を追記し`created_at: :DESC`で降順にして取得するようにして結果を確認してみます。
@@ -227,7 +244,8 @@ end
 }
 ```
 
-
+<br>
+<br>
 
 seedでデータを作成しているため、作成日時がほとんど同じなので分かりづらいと思うので、新たにデータを追加してみます。
 
@@ -239,7 +257,7 @@ $ rails c
 > Post.create(title: "降順チェック", body: "降順で取得できるかチェックします。", published: true, user_id: user.id)
 ```
 
-
+<br>
 
 新たに公開済みのブログ記事として作成できたので、確認してみます。
 
@@ -284,6 +302,8 @@ $ rails c
 降順で表示されていることが分かります。
 
 
+<br>
+<br>
 
 
 
@@ -298,6 +318,7 @@ scope :published, -> { where(published: true).order(created_at: :DESC) }
 SELECT `posts`.* FROM `posts` WHERE `posts`.`published` = TRUE ORDER BY `posts`.`created_at` DESC
 ```
 
+<br>
 
 
 ### クラスメソッド
@@ -315,7 +336,8 @@ SELECT `posts`.* FROM `posts` WHERE `posts`.`published` = TRUE ORDER BY `posts`.
 
 同じSQL文が実行されているようです。
 
-
+<br>
+<br>
 
 
 
@@ -328,6 +350,8 @@ scope :name, ->(name) { where(name: name) }
 ```
 
 
+<br>
+<br>
 
 
 
@@ -342,7 +366,8 @@ scope :name, ->(name) { where(name: name) }
 ```
 
 
-
+<br>
+<br>
 
 
 `scope`で`search`メソッドを定義して引数を受け取り、Postsテーブルの`title`カラムと部分一致するデータを取得します。
@@ -386,6 +411,8 @@ end
 ```
 
 
+<br>
+<br>
 
 jsonで送信した文字列で部分一致検索出来ているか確認します。
 
@@ -434,7 +461,8 @@ jsonで送信した文字列で部分一致検索出来ているか確認しま�
 無事`title`に「山田」と含まれているブログ記事のみ取得することができました。
 
 
-
+<br>
+<br>
 
 
 
