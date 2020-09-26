@@ -4,7 +4,7 @@ date: 2019-1-27 16:21:13
 lang: 'ja'
 ---
 
-# Ryutaro Takemura
+<!-- # Ryutaro Takemura
 
 
 <span>名前</span> 竹村 隆太郎  
@@ -13,4 +13,4 @@ lang: 'ja'
 <span>Github</span> [github - Ryutaro](https://github.com/Ryutaro95)  
 <span>Wantedly</span> [Wantedly マイページ](https://www.wantedly.com/users/82400419)
 
-<br>
+<br> -->
