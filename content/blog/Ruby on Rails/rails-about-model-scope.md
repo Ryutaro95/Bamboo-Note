@@ -18,6 +18,8 @@ scope :name, ->(name) { where(name: name) }
 <br>
 
 
+
+
 ひとまずRailsガイドで調べてみました。[Rails ガイド Active Record - 14.スコープ](https://railsguides.jp/active_record_querying.html#%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97)
 
 
