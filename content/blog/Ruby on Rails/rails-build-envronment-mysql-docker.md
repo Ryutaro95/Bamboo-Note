@@ -1,6 +1,6 @@
 ---
-title: 'パパっとRails6 x MySQL x docker-compose 環境を構築'
-date: 2020-09-15 0:26:32
+title: 'すぐにRails6 x MySQL x docker-compose環境構築'
+date: 2020-11-08 2:33:32
 category: 'Ruby on Rails'
 draft: false
 ---
@@ -17,7 +17,6 @@ draft: false
 
 ## ファイルの用意
 
----
 
 以下のファイルを任意のディレクトリに用意
 
@@ -120,7 +119,7 @@ $ docker-compose run api rails new . --force --database=mysql --skip-bundle --ap
 
 ## イメージ作成
 
----
+
 
 ```bash
 $ docker-compose build
@@ -128,7 +127,6 @@ $ docker-compose build
 
 ## イメージからコンテナを立ち上げる
 
----
 
 ```bash
 $ docker-compose up # -d
