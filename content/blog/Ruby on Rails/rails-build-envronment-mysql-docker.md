@@ -101,7 +101,6 @@ Gemfile.lock
 
 ## rails new
 
----
 
 ```bash
 $ docker-compose run api rails new . --force --database=mysql --skip-bundle --api
