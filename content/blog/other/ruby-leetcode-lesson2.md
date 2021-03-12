@@ -1,7 +1,7 @@
 ---
 title: 'LeetCodeでRubyとアルゴリズムを学びたい#2【66. Plus One】'
 date: 2020-08-19 18:05:34
-category: 'leetcode'
+category: 'other'
 draft: false
 ---
 

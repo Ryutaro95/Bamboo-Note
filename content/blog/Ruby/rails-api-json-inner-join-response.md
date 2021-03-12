@@ -1,7 +1,7 @@
 ---
 title: 'Rails API - 複数テーブル（親子テーブル）を結合して必要なカラムだけをJSONで返却したい'
 date: 2020-09-01 17:48:32
-category: 'Ruby on Rails'
+category: 'Ruby'
 draft: false
 ---
 

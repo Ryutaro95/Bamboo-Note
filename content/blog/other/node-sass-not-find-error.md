@@ -1,7 +1,7 @@
 ---
 title: 'nodeを再インストールしたらnode-Sassが見つからないと怒られた、ERROR #98123 WEBPACK ... Node Sass could not find a binding for your current environment'
 date: 2020-07-08 23:10:31
-category: 'Gatsby'
+category: 'other'
 draft: false
 ---
 

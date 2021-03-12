@@ -1,7 +1,7 @@
 ---
 title: 'Gatsbyチュートリアルデプロイまでやってみた'
 date: 2020-6-10 3:57:13
-category: 'Gatsby'
+category: 'other'
 draft: false
 ---
 

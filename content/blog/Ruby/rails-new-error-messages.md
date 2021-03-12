@@ -1,7 +1,7 @@
 ---
 title: 'Rails new したらこんなメッセージが表示されたので、調べてみた1.【chromedriver-helper is deprecated after 2019-03-31.】2.【Ruby Sass has reached end-of-life and should no longer be used.】'
 date: 2020-06-11 00:06:93
-category: 'Ruby on Rails'
+category: 'Ruby'
 draft: false
 ---
 

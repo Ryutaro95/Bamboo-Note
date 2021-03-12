@@ -1,7 +1,7 @@
 ---
 title: 'すぐにRails6 x MySQL x docker-compose環境構築'
 date: 2020-11-08 2:33:32
-category: 'Ruby on Rails'
+category: 'Ruby'
 draft: false
 ---
 

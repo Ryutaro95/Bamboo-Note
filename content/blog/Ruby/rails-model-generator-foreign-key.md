@@ -1,7 +1,7 @@
 ---
 title: '【Rails】モデルをgeneratorで作成するときに外部キー（FK）を設定する（references）'
 date: 2020-09-01 16:48:32
-category: 'Ruby on Rails'
+category: 'Ruby'
 draft: false
 ---
 
