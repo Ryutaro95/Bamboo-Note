@@ -1,7 +1,7 @@
 ---
 title: '【Rails】ActiveRecordの`find_by`で大文字と小文字を区別しないで取得する方法'
 date: 2020-07-21 18:17:32
-category: 'Ruby on Rails'
+category: 'Ruby'
 draft: false
 ---
 

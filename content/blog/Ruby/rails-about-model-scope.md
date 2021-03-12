@@ -1,7 +1,7 @@
 ---
 title: '【Rails】Model（モデル）のscope（スコープ）ってなんだろう？を解決する'
 date: 2020-09-15 0:26:32
-category: 'Ruby on Rails'
+category: 'Ruby'
 draft: false
 ---
 
