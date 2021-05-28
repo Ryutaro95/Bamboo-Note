@@ -1,12 +1,44 @@
 ---
 title: 'Git操作 - 目的から逆引きGitコマンド【随時更新】'
-date: 2021-03-13 01:49:12
+date: 2021-05-29 01:49:12
 category: 'Git'
 draft: false
 ---
 
 
 普段SourcetreeでGitを操作しているため、gitコマンドをよく忘れることがあるので残しておきます。
+
+
+## Git ログを確認する - 追記: 2021/05/29
+
+```bash
+$ git log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %C(cyan)%cn %C(magenta)%d %Creset%s'
+```
+
+![](./images/git-log-image.png)
+
+<br>
+
+ただオプションが長すぎるので、 .gitconfigなどでaliasを設定する方が良さそう
+
+```bash
+# ~/.gitconfig
+
+# ....
+
+[alias]
+    gra = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %C(cyan)%cn %C(magenta)%d %Creset%s'
+```
+
+これで使いやすくなった。
+
+```bash
+$ git gra
+```
+
+<br>
+
+
 
 ## コミットしていない or まだしたくない変更を一時的に退避させる
 
