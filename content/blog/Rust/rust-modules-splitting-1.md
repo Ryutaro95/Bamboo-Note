@@ -5,6 +5,9 @@ category: 'Rust'
 draft: false
 ---
 
+この記事で説明したソースコードはGithubにあります。
+https://github.com/Ryutaro95/rust-module
+
 ## Rustのファイルによるモジュール分割には２通りある
 
 
