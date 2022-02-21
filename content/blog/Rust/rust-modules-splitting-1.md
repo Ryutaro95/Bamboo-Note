@@ -74,19 +74,19 @@ fn main() {
 
 animalsモジュールを分割するため、 `src/animals` ディレクトリを作成する。
 
-```rust
+```bash
 mkdir src/animals
 ```
 
 作成したディレクトリ配下に以下の３ファイルを作成。
 
-```rust
+```bash
 touch src/animals/cat.rs src/animals/bird.rs src/animals/dog.rs
 ```
 
-現在の構造はこんな感じです。
+現在のディレクトリ構造
 
-```rust
+```bash
 src
 ├── animals
 │  ├── bird.rs
@@ -95,7 +95,7 @@ src
 └── main.rs
 ```
 
-[main.rs](http://main.rs) に記載されていた、以下モジュールをディレクトリとファイルへ分割しました。
+main.rs に記載されていた、以下モジュールをディレクトリとファイルへ分割しました。
 
 Rustでは、ディレクトリ名とファイル名がそのままモジュール名として認識されるため、それぞれの関数を、作成した３ファイルに追記していきます。
 
@@ -154,11 +154,11 @@ pub fn name() -> String {
 
 これは、ディレクトリ名と同等のモジュール名のファイルを作成する必要がある。
 
-```rust
+```bash
 touch src/animals.rs
 ```
 
-```rust
+```bash
 src
 ├── animals
 │  ├── bird.rs
@@ -177,7 +177,7 @@ pub mod dog;
 pub mod bird;
 ```
 
-次に、animals.rs [をmain.rs](http://をmain.rs) を呼び出してみます。
+次に、animals.rs を main.rs を呼び出してみます。
 
 ```rust
 // src/main.rs
@@ -215,13 +215,13 @@ fn main() {
 
 次は zoo/breeder モジュールを同様の方法で分割していきます。
 
-```rust
+```bash
 mkdir srczoo/
 touch src/zoo/breeder.rs
 touch src/zoo.rs
 ```
 
-```rust
+```bash
 src
 ├── animals
 │  ├── bird.rs
@@ -273,14 +273,3 @@ fn main() {
 // ネコ科の動物で鳴き声はにゃー
 // 私は鳥科の鷹を担当しています。
 ```
-
-これで [main.rs](http://main.rs) にある全てのモジュールを分割することが出来ました。
-
-モジュールは関数、構造体、トレイト、 `impl` ブロック、その他のモジュールなどの要素の集合
-
-## プライベートとパブリック
-
----
-
-デフォルトでは、モジュール内の要素はプライベートとなっているが、 `pub` を修飾することでパブリックな属性にすることができる。
-パブリックな属性のみがモジュールの外のスコープからアクセス可能。
