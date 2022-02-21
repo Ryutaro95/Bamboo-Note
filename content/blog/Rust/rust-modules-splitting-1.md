@@ -216,7 +216,7 @@ fn main() {
 次は zoo/breeder モジュールを同様の方法で分割していきます。
 
 ```bash
-mkdir srczoo/
+mkdir src/zoo
 touch src/zoo/breeder.rs
 touch src/zoo.rs
 ```
