@@ -17,6 +17,9 @@
 image: node:l6.15.0
 cache:
     paths:
+        - node_modules/
+pages:
+    script:
         - yarn install
         - ./node_modules/.bin/gatsby build --prefix-paths
     artifacts:
@@ -24,7 +27,6 @@ cache:
             - public
     only:
         - master
-
 stages:          # List of stages for jobs, and their order of execution
   - build
   - test
