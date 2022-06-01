@@ -20,7 +20,7 @@ cache:
         - node_modules/
 pages:
     script:
-        - yarn install
+        - npm install
         - ./node_modules/.bin/gatsby build --prefix-paths
     artifacts:
         paths:
