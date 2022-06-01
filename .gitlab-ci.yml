@@ -1,0 +1,17 @@
+image: node:16.15.0
+cache:
+    paths:
+        - node_modules/
+        - .cache/
+        - public/
+
+pages:
+    stage: deploy
+    script:
+        - npm install
+        - ./node_modules/.bin/gatsby build --prefix-paths
+    artifacts:
+        paths:
+            - public
+    only:
+        - master
